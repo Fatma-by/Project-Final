@@ -1,20 +1,25 @@
-import React, { useState } from "react";
 import { Card } from "../../Card/Card";
-import cardList from "../../Card/cardList";
+import CardList from "../../Card/CardList";
 import '../../Card/Card.css'
+import { Routes, Route, Navigate } from "react-router-dom";
+import ExerciceScience from "./ExerciceScience";
+
 
 export default function Science() {
   return (
     <>
-      <div className="Matiere">
-        {cardList.map((cardList) => (
-          <Card
-            key={cardList.id}
-            image={cardList.image}
-            name={cardList.name}
-            
-          />
-        ))}
+
+<Routes>
+        <Route>
+          <Route path="/ExerciceScience" element={<ExerciceScience/>} />
+          
+
+        </Route>
+      </Routes>
+
+      <div>
+            <CardList/>
+
       </div>
     </>
   );

@@ -1,5 +1,7 @@
 import React from "react";
 import "./SidebarMatiere.css";
+import { Link } from "react-router-dom";
+
 
 function SidebarMatiere() {
   const handleToggleSidebar = () => {
@@ -15,7 +17,7 @@ function SidebarMatiere() {
           <ul className="sidebar-nav">
             <li className="sidebar-item">
               <i className="fa-regular fa-file-lines pe-2"></i>
-              Première Année
+              <Link to="/premiere">Première Année</Link>
             </li>
             <li className="sidebar-item">
               <i className="fa-solid fa-sliders pe-2"></i>

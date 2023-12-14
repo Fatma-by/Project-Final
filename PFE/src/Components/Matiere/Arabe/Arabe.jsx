@@ -1,24 +1,17 @@
 import React, { useState } from "react";
-import { Card } from "../../Card/Card";
-import cardList from "../../Card/cardList";
-import '../../Card/Card.css'
+import CardList from "../../Card/CardList";
+import DevoirArabe from "./DevoirArabe";
+import ExerciceArabe from "./ExerciceArabe";
+import CoursArabe from "./CoursArabe";
+import Premiere from "../../Premiere/Premiere";
 
+import { Routes, Route, Navigate } from "react-router-dom";
 
 export default function Arabe() {
   return (
     <>
-
-
-
-      <div className="Matiere">
-        {cardList.map((cardList) => (
-          <Card
-            key={cardList.id}
-            image={cardList.image}
-            name={cardList.name}
-            
-          />
-        ))}
+      <div >
+       <CardList/>
       </div>
     </>
   );

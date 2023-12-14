@@ -1,6 +1,7 @@
 import React from 'react'
 import SidebarMatiere from '../SidebarMatiere/SidebarMatiere'
 import "./Arabe.css";
+import Premiere from '../../Premiere/Premiere';
 
 
 
